@@ -1,0 +1,40 @@
+video, audio, canvas {
+	display: inline-block
+}
+
+html, body {
+	background-color: #000;
+	overflow: hidden
+}
+
+* {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility .5s linear 0s, opacity .5s linear 0s
+}
+
+.isStart .canvas {
+	visibility: visible;
+	opacity: 1
+}
+
+.canvas.isHide {
+	display: none
+}
+
+.menu_inner {
+	display: inline-block;
+	box-sizing: border-box;
+	padding-bottom: 5px
+}

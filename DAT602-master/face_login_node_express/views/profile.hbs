@@ -1,0 +1,23 @@
+<h1 class="mb-4">Profile Page</h1>
+<div class="card">
+    <h5 class="card-header">{{user.local.username}}</h5>
+    <div class="card-body">
+        <div class="media">
+            <img class="mr-3 img-thumbnail" src="https://s3-eu-west-1.amazonaws.com/dat-602-users/{{user.local.username}}/{{toLowerCase user.local.username}}_01.jpg" width="150px">
+            <div class="media-body">
+                <p>You are logged in as {{user.local.username}}</p>
+                <p>ID: {{user.id}}</p>
+                <p>Password: {{user.local.password}}</p>
+            </div>
+        </div>
+        {{#if user.local.twitter}}
+        	<div class="card text-white bg-primary mb-3">
+			    <h5 class="card-header"><i class="fab fa-twitter"></i> Twitter</h5>
+			    <div class="card-body text-dark bg-white">
+                    <p class="card-text">Twitter: <a href="/twitter">@{{user.local.twitter}}</a></p>
+			        <p class="card-text"><a href="/twitter-vis">Twitter Friends Visualisation</a></p>
+		       </div>
+		    </div>
+        {{/if}}
+    </div>
+</div>
