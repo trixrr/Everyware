@@ -6,3 +6,6 @@ DAT602 - Everyware
 
 Matthew:
 http://www.circleseven.co.uk/category/digital-art-and-technology/dat602/
+
+Lee: 
+https://everywarelashbrook.blogspot.com/
